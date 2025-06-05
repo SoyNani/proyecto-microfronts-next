@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧩 Proyecto: Micro Frontend de Pokémons con Next.js y Tailwind CSS
 
-## Getting Started
+## Descripción
 
-First, run the development server:
+Este proyecto es una aplicación web construida con [Next.js](https://nextjs.org/) que implementa una arquitectura de micro frontends utilizando la funcionalidad de [Multi-Zones](https://nextjs.org/docs/pages/building-your-application/deploying/multi-zones). La aplicación principal presenta una introducción al mundo Pokémon, un ranking de los 5 Pokémon más populares y un botón que redirecciona a un micro frontend independiente. Este micro frontend muestra un carrusel de Pokémon obtenidos desde la [PokéAPI](https://pokeapi.co/), y al seleccionar uno, se despliega información detallada del mismo.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tecnologías Utilizadas
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js**: Framework de React para renderizado del lado del servidor y generación de sitios estáticos.
+- **Multi-Zones de Next.js**: Permite dividir la aplicación en múltiples zonas o micro frontends independientes, facilitando el desarrollo y despliegue modular.
+- **Tailwind CSS**: Framework de utilidad para estilos CSS rápidos y responsivos, que permite construir diseños personalizados directamente en el HTML mediante clases de utilidad.
+- **PokéAPI**: API pública para obtener datos de Pokémon.
+- **TypeScript**: Superset de JavaScript que añade tipado estático, mejorando la mantenibilidad y escalabilidad del código.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Decisiones Técnicas
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Arquitectura de Micro Frontends con Multi-Zones**: Se eligió esta arquitectura para permitir el desarrollo y despliegue independiente de cada sección de la aplicación, facilitando la escalabilidad y el mantenimiento. Esta estrategia permite que diferentes equipos trabajen en distintas partes de la aplicación sin interferencias, mejorando la eficiencia del desarrollo.
+- **Uso de Tailwind CSS**: Se optó por Tailwind CSS para lograr una rápida prototipación y mantener estilos consistentes sin escribir CSS personalizado. Su enfoque utility-first permite construir interfaces de usuario modernas y responsivas de manera eficiente, promoviendo la reutilización de estilos y la coherencia visual en toda la aplicación.
