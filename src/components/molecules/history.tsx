@@ -18,16 +18,17 @@ export default function History() {
             A pesar de las dificultades iniciales, la franquicia Pokémon se convirtió en un fenómeno global, expandiéndose a juegos de cartas, series de televisión, películas y más. Tajiri continúa involucrado en el desarrollo de la serie, supervisando y aprobando los textos de los juegos más recientes.
         </p>
         <div className="flex justify-center">
-            <div className="rounded-full overflow-hidden">
-            <Image
-                src="/satoshi.jpg" 
-                alt="Todos los Pokémon"
-                width={500}
-                height={500}
-                className="rounded-full shadow-lg m-10 shadow-yellow-500 object-cover"
-            />
-            </div>
+            <div className="w-[250px] h-[250px] rounded-full overflow-hidden m-10 shadow-lg shadow-yellow-500">
+                <Image
+                    src="/satoshi.jpg"
+                    alt="Todos los Pokémon"
+                    width={250}
+                    height={250}
+                    className="w-full h-full object-cover"
+                />
+             </div>
         </div>
+
     </section>
     );
 } 
